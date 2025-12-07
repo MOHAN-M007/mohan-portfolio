@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Mohan.M</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Add card flip animation for project items */
+    .project-card {
+      perspective: 1000px;
+    }
+
+    .project-card-inner {
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+
+    .project-card:hover .project-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .project-card-front, .project-card-back {
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .project-card-back {
+      transform: rotateY(180deg);
+    }
+
+    /* New styles for updated Projects section */
+    .projects-grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .project-item {
+      text-align: center;
+      max-width: 200px;
+    }
+
+    .project-image {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #code-sample-projects {
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    .code-sample-grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .code-sample-item {
+      text-align: center;
+    }
+
+    .code-sample-item img {
+      width: 150px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .code-sample-item h3 {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .code-item img {
+      width: 150px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 10px;
+    }
+
+    .code-item h3 {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- Updated Projects page to match the attached design -->
+  <header class="hero">
+    <h1>Innovative Projects</h1>
+    <p>Transforming ideas into impactful solutions through technology and design.</p>
+    <button class="cta">Learn More</button>
+  </header>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="experiences.html">Experiences</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- Updated Projects section with images and new layout -->
+    <section id="projects">
+      <h2>Projects & Innovations</h2>
+      <div class="projects-grid">
+        <div class="project-item">
+          <img src="imgs/ui.png" alt="UI/UX Design" class="project-image">
+          <h3>UI/UX Design</h3>
+        </div>
+        <div class="project-item">
+          <img src="imgs/iot.jpg" alt="IoT Project" class="project-image">
+          <h3>IoT Project</h3>
+        </div>
+        <div class="project-item">
+          <img src="imgs/ai.jpg" alt="AI Project" class="project-image">
+          <h3>AI Project</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Removed image displays in the projects.html file to match the changes made in about.html -->
+
+    <!-- Added sample codes and projects section -->
+    <section class="code-projects">
+      <h2>Code Samples & Projects</h2>
+      <p>Explore some of my coding projects and sample codes that demonstrate my expertise.</p>
+      <div class="code-grid">
+        <div class="code-item">
+          <img src="imgs/ai ml.jpg" alt="AI & ML Project">
+          <h3>AI Voice Detection</h3>
+          <pre><code>import tensorflow as tf
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, LSTM
+
+# Sample AI model
+model = Sequential([
+    LSTM(128, input_shape=(100, 1)),
+    Dense(64, activation='relu'),
+    Dense(1, activation='sigmoid')
+])
+model.compile(optimizer='adam', loss='binary_crossentropy')
+print(model.summary())</code></pre>
+        </div>
+        <div class="code-item">
+          <img src="imgs/obj det.jpg" alt="Object Detection Project">
+          <h3>YOLO Object Detection</h3>
+          <pre><code>import cv2
+from yolov8 import YOLOv8
+
+# Load YOLO model
+yolo = YOLOv8("yolov8.weights")
+
+# Perform detection
+image = cv2.imread("image.jpg")
+results = yolo.detect(image)
+for obj in results:
+    print(f"Detected {obj['label']} at {obj['bbox']}")</code></pre>
+        </div>
+        <div class="code-item">
+          <img src="imgs/da.png" alt="Data Analytics Project">
+          <h3>Interactive Dashboard</h3>
+          <pre><code>import dash
+from dash import html, dcc
+
+# Create Dash app
+app = dash.Dash(__name__)
+app.layout = html.Div([
+    html.H1("Interactive Dashboard"),
+    dcc.Graph(id="example-graph", figure={
+        "data": [
+            {"x": [1, 2, 3], "y": [4, 1, 2], "type": "bar", "name": "Sample"}
+        ],
+        "layout": {"title": "Sample Graph"}
+    })
+])
+
+if __name__ == "__main__":
+    app.run_server(debug=True)</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- Code Sample Projects Section -->
+    <section id="code-sample-projects">
+      <h2>Code Sample Projects</h2>
+      <div class="code-sample-grid">
+        <div class="code-sample-item">
+          <img src="imgs/ai ml.jpg" alt="AI & ML Project" class="project-image">
+          <h3>AI & ML Project</h3>
+        </div>
+        <div class="code-sample-item">
+          <img src="imgs/da.png" alt="Data Analytics Project" class="project-image">
+          <h3>Data Analytics Project</h3>
+        </div>
+        <div class="code-sample-item">
+          <img src="imgs/obj det.jpg" alt="Object Detection Project" class="project-image">
+          <h3>Object Detection Project</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="public-projects" class="projects-section">
+      <h2>Public Projects and APIs</h2>
+      <div class="project">
+        <h3>Roboflow Universe</h3>
+        <p>Explore pre-trained computer vision models for various applications.</p>
+        <a href="https://universe.roboflow.com" target="_blank">Learn More</a>
+      </div>
+      <div class="project">
+        <h3>OpenVisionAPI</h3>
+        <p>An open-source computer vision API based on open-source models.</p>
+        <a href="https://openvisionapi.com" target="_blank">Learn More</a>
+      </div>
+      <div class="project">
+        <h3>GitHub ReadMe Stats</h3>
+        <p>Add dynamically generated statistics to your GitHub profile ReadMe.</p>
+        <a href="https://github.com/anuraghazra/github-readme-stats" target="_blank">Learn More</a>
+      </div>
+      <div class="project">
+        <h3>Metabase</h3>
+        <p>An open-source Business Intelligence server to share data and analytics.</p>
+        <a href="https://www.metabase.com/" target="_blank">Learn More</a>
+      </div>
+      <div class="project">
+        <h3>Unsplash API</h3>
+        <p>Access a vast library of free photography for your projects.</p>
+        <a href="https://unsplash.com/developers" target="_blank">Learn More</a>
+      </div>
+      <div class="project">
+        <h3>SpaceX API</h3>
+        <p>Explore spaceflight launches and events data.</p>
+        <a href="https://github.com/r-spacex/SpaceX-API" target="_blank">Learn More</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Mohan.M. All rights reserved.</p>
+  </footer>
+</body>
+</html>

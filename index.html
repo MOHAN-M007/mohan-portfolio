@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohan.M - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Add smooth page transitions */
+    body {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Add hover effects for buttons */
+    .cta {
+      transition: transform 0.3s, background-color 0.3s;
+    }
+
+    .cta:hover {
+      transform: scale(1.1);
+      background-color: #007BFF;
+      color: #fff;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #0056b3;
+    }
+
+    .profile-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid #007BFF;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="profile-container">
+      <img src="imgs/profilephoto.jpg" alt="Profile Photo" class="profile-photo">
+    </div>
+    <h1>Welcome to My Portfolio</h1>
+    <p>Crafting impactful solutions in AI, robotics, and design to shape the future.</p>
+    <button class="cta">Explore More</button>
+  </header>
+  <!-- Updated Navigation Section -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="activities.html">Activities</a></li>
+      <li><a href="experiences.html">Experiences</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="summary">
+      <h2>Summary</h2>
+      <p>I am <strong>Mohan.M</strong>, a passionate <strong>B.Tech Artificial Intelligence & Data Science</strong> student with expertise in AI, robotics, data analytics, and UI/UX design. I build impactful tech solutions and lead innovative projects.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Mohan.M. All rights reserved.</p>
+  </footer>
+  <script>
+    // Remove smooth scrolling for external navigation links
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (!href.startsWith('#')) {
+          // Allow default behavior for external links
+          return;
+        }
+        e.preventDefault();
+        document.querySelector(href).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>

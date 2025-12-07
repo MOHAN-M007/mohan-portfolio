@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills - Mohan.M</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Add progress bar animations */
+    .bar {
+      animation: growBar 2s ease-in-out;
+    }
+
+    @keyframes growBar {
+      from {
+        width: 0;
+      }
+      to {
+        width: var(--bar-width);
+      }
+    }
+
+    #skills-map {
+      margin: 40px 0;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .skill-category {
+      margin-bottom: 20px;
+    }
+
+    .skill-map {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .skill {
+      background: #007BFF;
+      color: #fff;
+      padding: 10px;
+      border-radius: 4px;
+      text-align: center;
+      font-weight: bold;
+      animation: growSkill 1s ease-in-out;
+    }
+
+    @keyframes growSkill {
+      from {
+        width: 0;
+      }
+      to {
+        width: var(--skill-width);
+      }
+    }
+
+    #skills-images {
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    .skills-image-grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .skill-image-item {
+      text-align: center;
+    }
+
+    .skill-image-item img {
+      width: 150px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .skill-image-item p {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="experiences.html">Experiences</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Updated Skills page to match the attached design -->
+  <header class="hero">
+    <h1>Technical Skills</h1>
+    <p>Showcasing expertise across various domains and technologies.</p>
+    <button class="cta">Learn More</button>
+  </header>
+
+  <main>
+    <section id="skills">
+      <h2>My Skills</h2>
+      <div class="skill">
+        <label>AI/ML Development</label>
+        <div class="bar" style="width: 90%;">90%</div>
+      </div>
+      <div class="skill">
+        <label>UI/UX Design</label>
+        <div class="bar" style="width: 85%;">85%</div>
+      </div>
+      <div class="skill">
+        <label>Data Analytics</label>
+        <div class="bar" style="width: 80%;">80%</div>
+      </div>
+      <div class="skill">
+        <label>App Development</label>
+        <div class="bar" style="width: 75%;">75%</div>
+      </div>
+      <div class="skill">
+        <label>Robotics & Drones</label>
+        <div class="bar" style="width: 70%;">70%</div>
+      </div>
+    </section>
+    <!-- Updated Skills page with Technical Skills -->
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="skill">
+        <label>Python, TensorFlow, PyTorch, OpenCV, YOLOv8/v9</label>
+        <div class="bar" style="width: 90%;">90%</div>
+      </div>
+      <div class="skill">
+        <label>HTML, CSS, JavaScript, UI/UX Design, Figma, Adobe XD</label>
+        <div class="bar" style="width: 85%;">85%</div>
+      </div>
+      <div class="skill">
+        <label>Power BI, Data Extraction, Data Cleaning, Data Visualization</label>
+        <div class="bar" style="width: 80%;">80%</div>
+      </div>
+      <div class="skill">
+        <label>Google Apps Script, Git/GitHub, Cloudflare</label>
+        <div class="bar" style="width: 75%;">75%</div>
+      </div>
+      <div class="skill">
+        <label>Robotics prototyping, IoT sensors</label>
+        <div class="bar" style="width: 70%;">70%</div>
+      </div>
+    </section>
+
+    <section class="work">
+      <h2>My Skills</h2>
+      <p>Here are some of my technical skills. Click on each to learn more.</p>
+      <div class="work-grid">
+        <div class="work-item">
+          <img src="imgs/ai ml.jpg" alt="AI & ML">
+          <h3>AI & ML</h3>
+        </div>
+        <div class="work-item">
+          <img src="imgs/ui.png" alt="UI/UX Design">
+          <h3>UI/UX Design</h3>
+        </div>
+        <div class="work-item">
+          <img src="imgs/da.png" alt="Data Analytics">
+          <h3>Data Analytics</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills-images">
+      <h2>Visual Representation of My Skills</h2>
+      <div class="skills-image-grid">
+        <div class="skill-image-item">
+          <img src="imgs/ai ml.jpg" alt="AI & ML">
+          <p>AI & ML</p>
+        </div>
+        <div class="skill-image-item">
+          <img src="imgs/da.png" alt="Data Analytics">
+          <p>Data Analytics</p>
+        </div>
+        <div class="skill-image-item">
+          <img src="imgs/ui.png" alt="UI/UX Design">
+          <p>UI/UX Design</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Mohan.M. All rights reserved.</p>
+  </footer>
+</body>
+</html>

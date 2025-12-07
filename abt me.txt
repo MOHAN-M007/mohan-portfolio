@@ -1,0 +1,68 @@
+Here’s a clean, professional, powerful **“About Me”** section you can use anywhere — resume, portfolio, LinkedIn, presentations, or seminars:
+
+---
+
+# **About Me – Harish Mohan (Mohan M)**
+
+I am **Harish Mohan**, a passionate and driven **B.Tech Artificial Intelligence & Data Science** student with a strong interest in **AI, robotics, data analytics, UI/UX design, and real-world problem solving**. I enjoy building meaningful tech solutions that create impact — from intelligent wireless drones and underwater robots to data-powered dashboards and modern digital experiences.
+
+I have gained hands-on experience through **multiple internships**, national-level participation, volunteering, and leadership roles. I continuously explore new technologies, design innovative systems, and always look for opportunities to improve myself and contribute to real-world challenges.
+
+I am also a **speaker, designer, developer, and researcher** who actively participates in expos, tech summits, and conferences. My broad skill set across AI, design, analytics, and development helps me build creative and functional solutions.
+
+---
+
+# **Who I Am in One Line**
+
+A passionate AI & Data Science engineer in the making — building smart systems, designing meaningful user experiences, and leading impactful projects.
+
+---
+
+# **Core Highlights**
+
+* 🌟 AI/ML Developer
+* 🎨 UI/UX Designer
+* 📊 Data Analyst
+* 📱 App Developer
+* 🤖 Robotics & Drone Enthusiast
+* 🎤 Speaker & Student Leader
+* 🧪 Research & Innovation Focused
+* 🤝 Volunteer (ISRO Space on Wheels)
+
+---
+
+# **Experiences Summary**
+
+* Completed **Data Mining & Extraction internship** at *Misoftservices*
+* Completed **Data Analytics internship** at *Misoftservices*
+* Completed **UI/UX Design internship** at *Novitech*
+* Volunteer for **ISRO Space on Wheels** (Salem, 2024)
+* Speaker in multiple college technical events
+* Participant at **StartupTN Global Summit**
+* Participant at **TNJFU National Level Project Expo & Conference (Jan 2025)**
+
+---
+
+# **Personal Traits**
+
+* Creative problem solver
+* Strong communicator
+* Fast learner
+* Leadership & teamwork abilities
+* Passionate about innovation and technology
+
+---
+
+
+---
+
+### **About Me — Mohan M (Harish)**
+
+I am an aspiring **AI & Data Science engineer** and **UI/UX designer** with a passion for transforming ideas into practical solutions. I have hands-on experience in **machine learning, deep learning, robotics, IoT, and full-stack web development**, with projects ranging from **deepfake and AI voice detection** to **YOLO-based real-time object detection**.
+
+I have completed multiple **internships** including **Data Mining & Extraction** and **Data Analytics** at Misoft Services, and **UI/UX design** at NoviTech. I have also contributed as a **volunteer** for **Space on Wheels** by ISRO, served as a **speaker** at technical events, and actively participated in national-level summits like **StartupTN Global Summit** and **TNJFU Project Expo & Conference**.
+
+In addition to technical skills, I have demonstrated leadership and creativity as **Science Club President & Youth Red Cross Head** at my college. I enjoy building systems that **solve real-world problems**—whether it’s AI-driven solutions, robotic prototypes like **Neeron** (underwater robot), **Sylva_Sentinel** (wildlife drone), or innovative safety devices like **FLIBAND**.
+
+I am always eager to **learn, explore new technologies, and take on challenging projects**, combining technical expertise with design thinking to deliver impactful results.
+
